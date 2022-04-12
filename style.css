@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  background-color: blue;
+}
+
+.inputWrapper {
+  width: 50%;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.character {
+  display: flex;
+  justify-content: space-evenly;
+  outline: red solid 2px;
+  flex-wrap: wrap;
+}
+
+/* for the future animation use the property transform: rotateX(30deg);  */
+
+.whiteRectang {
+  background-color: #fff;
+}
+
+.blackRectang {
+  background-color: #000;
+}
+
+.whiteRectang,
+.blackRectang {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+}
+
+.A {
+  width: 160px;
+}

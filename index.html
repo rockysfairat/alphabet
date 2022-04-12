@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablå</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="character A">
+        <!-- first row -->
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- second row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- third row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- fourth row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- fifth row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- sixth row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <!-- seventh row -->
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="blackRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="whiteRectang"></div>
+        <div class="blackRectang"></div>
+      </div>
+    </section>
+    <div class="inputWrapper">
+      <label for="mytext"
+        >Type something and click GO! Max input text length is 20 symbols</label
+      >
+      <input
+        type="text"
+        id="mytext"
+        name="mytext"
+        required
+        maxlength="20"
+        size="25"
+      />
+      <button onclick="captureText()">GO!</button>
+      <button onclick="document.getElementById('mytext').value = ''">
+        clear
+      </button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
