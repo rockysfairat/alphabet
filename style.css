@@ -14,6 +14,11 @@ body {
 section {
   width: 100%;
   background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex-wrap: wrap;
 }
 
 .inputWrapper {
@@ -30,6 +35,8 @@ section {
   justify-content: space-evenly;
   outline: red solid 2px;
   flex-wrap: wrap;
+  margin: 6px;
+  width: 100px; /* delete later */
 }
 
 /* for the future animation use the property transform: rotateX(30deg);  */
@@ -49,6 +56,85 @@ section {
   margin: 1px;
 }
 
-.A {
+/* characters with ONE squares inside: */
+.i {
+  width: 25px;
+}
+
+/* characters with TWO squares inside: */
+.I,
+.j,
+.l {
+  width: 50px;
+}
+
+/* characters with THREE squares inside: */
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.o,
+.p,
+.r,
+.s,
+.t {
+  width: 70px;
+}
+
+/* characters with FOUR squares inside: */
+.J,
+.a,
+.h,
+.n,
+.q {
+  width: 90px;
+}
+
+/* characters with FIVE squares inside: */
+.A,
+.E,
+.F,
+.L,
+.N,
+.S,
+.k,
+.SPACE {
+  width: 120px;
+}
+
+/* characters with SIX squares inside: */
+.B,
+.C,
+.K,
+.M,
+.P,
+.T,
+.U,
+.X,
+.Y,
+.Z,
+.m {
+  width: 140px;
+}
+
+/* characters with SEVEN squares inside: */
+.D,
+.G,
+.H,
+.R,
+.V {
   width: 160px;
+}
+
+/* characters with EIGHT squares inside: */
+.O,
+.Q {
+  width: 180px;
+}
+
+/* characters with TEN squares inside: */
+.W {
+  width: 220px;
 }
