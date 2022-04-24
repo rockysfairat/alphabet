@@ -3688,17 +3688,22 @@ const displayTextBtn = document.getElementById("displayTXTbtn");
 
 const clearTxtBtn = document.getElementById("clearTXTbtn");
 
-displayTextBtn.onClick = function () {
-  displayTxt();
-};
-
 function displayTxt() {
   let txt = [];
-  clearTxtBtn.style.color = "red";
   if (inputField.value) {
     txt.push(inputField.value);
-  } else {
-    alert("Type something!");
   }
   console.log(txt);
+}
+
+inputField.addEventListener("keyup", function (event) {
+  if (event.keyCode == 13) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    displayTextBtn.click();
+  }
+});
+
+function clearInputField() {
+  document.getElementById("mytext").value = "";
 }
