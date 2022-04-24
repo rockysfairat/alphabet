@@ -79,7 +79,9 @@ section {
 .p,
 .r,
 .s,
-.t {
+.t,
+.z,
+.num1 {
   width: 70px;
 }
 
@@ -88,7 +90,9 @@ section {
 .a,
 .h,
 .n,
-.q {
+.q,
+.u,
+.y {
   width: 90px;
 }
 
@@ -100,7 +104,10 @@ section {
 .N,
 .S,
 .k,
-.SPACE {
+.v,
+.x,
+.SPACE,
+.num5 {
   width: 120px;
 }
 
@@ -115,7 +122,15 @@ section {
 .X,
 .Y,
 .Z,
-.m {
+.m,
+.num2,
+.num3,
+.num4,
+.num6,
+.num7,
+.num8,
+.num9,
+.num0 {
   width: 140px;
 }
 
@@ -124,7 +139,8 @@ section {
 .G,
 .H,
 .R,
-.V {
+.V,
+.w {
   width: 160px;
 }
 
