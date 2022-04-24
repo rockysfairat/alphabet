@@ -3682,7 +3682,23 @@ const alphabet = [
   },
 ];
 
-function captureText() {
-  let textToDisplay = document.getElementById("mytext").value;
-  console.log(textToDisplay);
+const inputField = document.getElementById("mytext");
+
+const displayTextBtn = document.getElementById("displayTXTbtn");
+
+const clearTxtBtn = document.getElementById("clearTXTbtn");
+
+displayTextBtn.onClick = function () {
+  displayTxt();
+};
+
+function displayTxt() {
+  let txt = [];
+  clearTxtBtn.style.color = "red";
+  if (inputField.value) {
+    txt.push(inputField.value);
+  } else {
+    alert("Type something!");
+  }
+  console.log(txt);
 }

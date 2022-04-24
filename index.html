@@ -21,8 +21,11 @@
         maxlength="20"
         size="25"
       />
-      <button onclick="captureText()">GO!</button>
-      <button onclick="document.getElementById('mytext').value = ''">
+      <button id="displayTXTbtn">GO!</button>
+      <button
+        id="clearTXTbtn"
+        onclick="document.getElementById('mytext').value = '' "
+      >
         clear
       </button>
     </div>
