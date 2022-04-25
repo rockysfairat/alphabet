@@ -3682,28 +3682,44 @@ const alphabet = [
   },
 ];
 
+// defining the elements for the page interaction:
+
 const inputField = document.getElementById("mytext");
 
 const displayTextBtn = document.getElementById("displayTXTbtn");
 
 const clearTxtBtn = document.getElementById("clearTXTbtn");
 
-function displayTxt() {
+// dispaly text on btn click:
+
+displayTextBtn.addEventListener("click", displayTxt);
+
+function displayTxt(event) {
   let txt = [];
-  if (inputField.value) {
+  if (event.type == "click" && inputField.value) {
     txt.push(inputField.value);
   }
   console.log(txt);
 }
 
-inputField.addEventListener("keyup", function (event) {
+// display txt on Enter press:
+
+inputField.addEventListener("keyup", displayTxtOnEneter);
+
+function displayTxtOnEneter(event) {
   if (event.keyCode == 13) {
     event.preventDefault();
     event.stopImmediatePropagation();
     displayTextBtn.click();
   }
-});
+}
 
-function clearInputField() {
-  document.getElementById("mytext").value = "";
+// cleaning up the text.
+
+clearTxtBtn.addEventListener("click", clearInputField);
+
+function clearInputField(event) {
+  if (event.type == "click") {
+    document.getElementById("mytext").value = "";
+  }
 }
