@@ -3690,16 +3690,38 @@ const displayTextBtn = document.getElementById("displayTXTbtn");
 
 const clearTxtBtn = document.getElementById("clearTXTbtn");
 
+const showTxt = document.getElementsByTagName("section");
+
+// console.log(showTxt[0].innerHTML);
+
 // dispaly text on btn click:
 
-displayTextBtn.addEventListener("click", displayTxt);
+displayTextBtn.addEventListener("click", saveTxt);
 
-function displayTxt(event) {
-  let txt = [];
+// Extract the input text and store it into a string:
+
+function saveTxt(event) {
+  let txtString = [];
   if (event.type == "click" && inputField.value) {
-    txt.push(inputField.value);
+    txtString.push(inputField.value);
   }
-  console.log(txt);
+
+  // Render the text on the page:
+
+  function displayTxt(arr) {
+    let result;
+    if (arr.length > 0) {
+      result = arr[0].split("");
+    }
+    for (let i = 0; arr[0].length > i; i++) {
+      let boo = alphabet.filter((entry) => entry.character == result[i]);
+      console.log(boo[0].htmlCode);
+      const letter = document.createElement("div");
+      letter.innerHTML = boo[0].htmlCode;
+      showTxt[0].appendChild(letter);
+    }
+  }
+  return displayTxt(txtString);
 }
 
 // display txt on Enter press:
