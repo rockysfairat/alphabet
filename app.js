@@ -3680,6 +3680,74 @@ const alphabet = [
     <div class="blackRectang"></div>
   </div>`,
   },
+  {
+    character: ".",
+    htmlCode: ` <div class="character num0">
+    <!-- first row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- second row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- third row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- fourth row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- fifth row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- sixth row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- seventh row -->
+    <div class="whiteRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- eight row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <!-- ninth row -->
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+    <div class="blackRectang"></div>
+  </div>`,
+  },
 ];
 
 // defining the elements for the page interaction:
@@ -3743,5 +3811,6 @@ clearTxtBtn.addEventListener("click", clearInputField);
 function clearInputField(event) {
   if (event.type == "click") {
     document.getElementById("mytext").value = "";
+    showTxt[0].innerHTML = "";
   }
 }
