@@ -73,14 +73,34 @@ footer a:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
+/* Input filed: */
+
 .inputWrapper {
   align-items: center;
-  background-color: rgba(255, 62, 62, 1);
+  background-color: rgba(255, 62, 62, 0.65);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   height: 200px;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: 40%;
+}
+
+label {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+input {
+  border-radius: 5px;
+  border: solid 1px #fff;
+}
+
+input:focus {
+  outline: #fff solid 5px;
 }
 
 .character {
