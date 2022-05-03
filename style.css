@@ -100,7 +100,17 @@ input {
 }
 
 input:focus {
-  outline: #fff solid 5px;
+  outline: solid orange 2px;
+}
+
+button {
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+}
+
+button:focus {
+  outline: solid orange 2px;
 }
 
 .character {
@@ -243,4 +253,14 @@ input:focus {
 /* characters with TEN squares inside: */
 .W {
   width: 220px;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
 }
