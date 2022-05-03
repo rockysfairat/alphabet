@@ -1,3 +1,3 @@
-_Type anything in the field and get the pixelated text string._
+_Type anything in the field and get a pixelated text string._
 
 ![Example of pixelated text](/screencast.gif)
