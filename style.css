@@ -85,7 +85,6 @@ footer a:focus::after {
   flex-wrap: wrap;
   height: 200px;
   justify-content: space-evenly;
-  min-width: fit-content;
   width: 40%;
 }
 
@@ -263,5 +262,9 @@ button:focus {
 
   button {
     font-size: 15px;
+  }
+
+  .inputWrapper {
+    width: 80%;
   }
 }
