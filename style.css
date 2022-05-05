@@ -267,4 +267,118 @@ button:focus {
   .inputWrapper {
     width: 80%;
   }
+
+  section {
+    min-height: 100px;
+  }
+
+  .character {
+    margin: 2px;
+  }
+
+  .blackRectang,
+  .whiteRectang {
+    height: 7px;
+    margin: 0.5px;
+    width: 7px;
+  }
+
+  /* characters with ONE squares inside: */
+  .i {
+    width: 15px;
+  }
+
+  /* characters with TWO squares inside: */
+  .I,
+  .j,
+  .l {
+    width: 20px;
+  }
+
+  /* characters with THREE squares inside: */
+  .b,
+  .c,
+  .d,
+  .e,
+  .f,
+  .g,
+  .o,
+  .p,
+  .r,
+  .s,
+  .t,
+  .z,
+  .num1 {
+    width: 24px;
+  }
+
+  /* characters with FOUR squares inside: */
+  .J,
+  .a,
+  .h,
+  .n,
+  .q,
+  .u,
+  .y {
+    width: 32px;
+  }
+
+  /* characters with FIVE squares inside: */
+  .A,
+  .E,
+  .F,
+  .L,
+  .N,
+  .S,
+  .k,
+  .v,
+  .x,
+  .SPACE,
+  .num5 {
+    width: 40px;
+  }
+
+  /* characters with SIX squares inside: */
+  .B,
+  .C,
+  .K,
+  .M,
+  .P,
+  .T,
+  .U,
+  .X,
+  .Y,
+  .Z,
+  .m,
+  .num2,
+  .num3,
+  .num4,
+  .num6,
+  .num7,
+  .num8,
+  .num9,
+  .num0 {
+    width: 48px;
+  }
+
+  /* characters with SEVEN squares inside: */
+  .D,
+  .G,
+  .H,
+  .R,
+  .V,
+  .w {
+    width: 56px;
+  }
+
+  /* characters with EIGHT squares inside: */
+  .O,
+  .Q {
+    width: 64px;
+  }
+
+  /* characters with TEN squares inside: */
+  .W {
+    width: 80px;
+  }
 }
